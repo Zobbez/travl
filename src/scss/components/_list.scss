@@ -1,0 +1,123 @@
+.list-wrapper {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  @media (max-width: 520px) {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    background-color: $color-grey-dark;
+    @media (max-width: 520px) {
+      display: none;
+    }
+  }
+  .main {
+    margin: 0 80px;
+    @media (max-width: 520px) {
+      margin: 0 25px;
+    }
+    .result {
+      margin-bottom: 40px;
+      p {
+        font-size: 18px;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+    .hotels {
+      .hotel {
+        display: flex;
+        box-shadow: 0 4px 8px rgba($color-black, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        @media (max-width: 520px) {
+          flex-direction: column;
+        }
+        .img {
+          position: relative;
+          height: 240px;
+          width: 360px;
+          overflow: hidden;
+          @media (max-width: 520px) {
+            width: 100%;
+          }
+          img {
+            height: inherit;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        .description {
+          display: flex;
+          justify-content: space-between;
+          padding: 20px 40px;
+          width: 100%;
+          @media (max-width: 520px) {
+            flex-direction: column;
+            width: initial;
+          }
+          .left {
+            h2 {
+              font-size: 30px;
+              font-weight: 700;
+            }
+            .star-rating {
+              margin-top: 10px;
+              display: flex;
+              ion-icon {
+                font-size: 18px;
+                &:not(:first-child) {
+                  padding-left: 10px;
+                }
+              }
+            }
+            p {
+              margin-top: 40px;
+              max-width: 300px;
+            }
+          }
+          .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .price {
+              margin-top: 40px;
+              p {
+                padding-bottom: 10px;      
+                span {
+                  font-size: 30px;
+                  font-weight: 700;
+                }
+              }
+            }
+            a {
+              text-align: center;
+              display: inline-block;
+              height: 40px;
+              background-color: $color-orange;
+              color: $color-white;
+              border-radius: 40px;
+              line-height: 40px;
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hotel-a {
+  
+}
+
+.hotel-b {
+  animation-delay: .5s;
+}
+
+.hotel-c {
+  animation-delay: 1s;
+}

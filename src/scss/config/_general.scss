@@ -1,0 +1,56 @@
+* {
+  font-size: 14px;
+  color: $color-black;
+}
+
+html {
+  font-family: 'HKGrotesk-medium', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.2;
+}
+.body {
+  height: calc(100vh - 80px);
+}
+
+.container {
+  display: flex;
+}
+.horizontal--center {
+  justify-content: center;
+}
+
+.container--center {
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+.current-page {
+  font-weight: bold;
+}
+
+.button {
+  text-align: center;
+  display: inline-block;
+  height: 40px;
+  background-color: $color-black;
+  color: $color-white;
+  border-radius: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.hide {
+  display: none;
+}

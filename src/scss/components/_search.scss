@@ -1,0 +1,62 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .date {
+    margin-bottom: 10px;
+    padding: 0 25px;
+    
+    @media (max-width: 520px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    span {  
+      font-size: 18px;
+      input {
+        font-family: 'HKGrotesk-medium', sans-serif;
+        border: none;
+        font-size: 18px;
+        width: 165px;
+      }
+    }
+  }
+  .search-bar {
+    margin-bottom: 20px;
+    position: relative;
+    input {
+      height: 40px;
+      border: none;
+      background-color: $color-grey;
+      border-radius: 40px;
+      padding: 0 15px;
+      outline: none;
+      width: 500px;
+      max-width: 600px;
+      @media (max-width: 520px) {
+        width: 300px;
+      }
+    }
+    ion-icon {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+      font-size: 25px;
+    }
+  }
+  .button {
+    display: inline-block;
+    height: 40px;
+    background-color: $color-orange;
+    color: $color-white;
+    border-radius: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+  }
+}
